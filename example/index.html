@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabullet Example</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../dist/Tabullet.js"></script>
+    <script>
+            $(function () {
+                function resetTabullet() {
+                    $("#table").tabullet({
+                        data: [
+                            {id: 1, name: "Aditya Purwa", level: "Admin"},
+                            {id: 2, name: "Aditya Avaga", level: "Manager"},
+                            {id: 101, name: "Aditya Myria", level: "User"},
+                            {id: 102, name: "Lucent Serentia", level: "LOD"},
+                            {id: 103, name: "Hayden Bapalthiel", level: "King"},
+                        ],
+                        action: function (mode, data) {
+                            console.log("ON " + mode);
+                            console.dir(data);
+                            resetTabullet();
+                        }
+                    });
+                }
+                resetTabullet();
+            });
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>
+                Tabullet Example
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <table class="table table-hover" id="table">
+                <thead>
+                <tr data-tabullet-map="id">
+                    <th width="50" data-tabullet-map="_index" data-tabullet-readonly="true">
+                        No
+                    </th>
+                    <th data-tabullet-map="name">Nama</th>
+                    <th data-tabullet-map="level">Level</th>
+                    <th width="50" data-tabullet-type="edit"></th>
+                    <th width="50" data-tabullet-type="delete"></th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

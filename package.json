@@ -1,0 +1,33 @@
+{
+  "name": "tabullet",
+  "version": "1.0.0",
+  "description": "Simple jQuery plugins for creating a table that can insert, edit, and delete row in one place.",
+  "main": "dist/tabullet.js",
+  "dependencies": {
+    "jquery": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/adityapurwa/tabullet.git"
+  },
+  "keywords": [
+    "table",
+    "jquery",
+    "tabullet",
+    "jquery",
+    "table",
+    "crud"
+  ],
+  "author": "Aditya Purwa <adityapurwa@windowslive.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adityapurwa/tabullet/issues"
+  },
+  "homepage": "https://github.com/adityapurwa/tabullet#readme"
+}
