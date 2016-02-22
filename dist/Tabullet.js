@@ -56,7 +56,7 @@
                     $(rowChildren).each(function (ri, rv) {
                         saveData[$(rv).attr('name')] = $(rv).val();
                     });
-                    options.action('edit', saveData);
+                    options.action('save', saveData);
                     return;
                 });
                 return;
@@ -95,6 +95,7 @@
                             $(rowChildren).each(function (ri, rv) {
                                 editData[$(rv).attr('name')] = $(rv).val();
                             });
+                            editData[idMap] = $(rowParent).attr('data-tabullet-id');
                             options.action('edit', editData);
                             return;
                         }
